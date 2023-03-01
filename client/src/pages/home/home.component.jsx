@@ -12,7 +12,7 @@ const Home = () => {
             <HomePageNav />
             <Branding />
             <Services />
-            {/* <div className='image-container'>
+            {/* <div className='branding-image-container'>
                 <BlueCLoud />
             </div> */}
         </div>

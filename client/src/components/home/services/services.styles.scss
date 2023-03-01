@@ -7,4 +7,43 @@
             font-size: 3.5em;
         }
     }
+    // .image-container {
+    // }
+    .card-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .card {
+            max-width: 50vw;
+            border-radius: 30px;
+            background: linear-gradient(222.87deg, rgba(236, 159, 5, 0.54) -0.68%, rgba(255, 78, 0, 0.54) 123.82%);
+            padding: 5vh 4.5vw;
+            .row {
+                border-radius: 35px;
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                padding: 2vw;
+                .image-container {
+                    max-width: 23vw;
+                }
+                h3 {
+                    font-size: 2.5em;
+                }
+            }
+        }
+        .toggle-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            top: 20px;
+            .rectangle {
+                margin: 0 10px;
+                height: 5px;
+                width: 50px;
+                background: rgba(47, 46, 65, 0.6);
+            }
+        }
+    }
 }

@@ -49,7 +49,7 @@ const upload = multer({ storage });
 // app.use("/users", userRoutes);
 // app.use("/posts", postRoutes);
 
-app.post('/',(req,res) => {
+app.get('/',(req,res) => {
   console.log('req.body', req.body);
   res.send('Hello World');
 })
