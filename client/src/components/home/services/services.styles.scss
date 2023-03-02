@@ -3,8 +3,17 @@
     .call-to-action {
         display: grid;
         grid-template-columns: 53ch;
+        margin: 4vw;
         h1 {
             font-size: 3.5em;
+            color: #3460AD;
+            margin-bottom:2vh;
+        }
+        p{
+            margin-bottom:2vh;
+        }
+        .forcolor {
+            color: #EB8D22;
         }
     }
     // .image-container {

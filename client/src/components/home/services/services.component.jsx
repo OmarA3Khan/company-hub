@@ -6,7 +6,7 @@ const Services = () => {
         <div className="services-section">
             <div className='call-to-action'>
                 <h1>What we do</h1>
-                <p>Prepare for an Agile Future</p>
+                <p className='forcolor'>Prepare for an Agile Future</p>
                 <p>
                     Maximize the ROI of your organization and empower your business to be more agile, responsive, and productive.
                     Embrace new intelligent technologies, automate inefficiencies and move your business forward.

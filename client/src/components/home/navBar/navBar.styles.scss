@@ -2,6 +2,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 2vh 4vw;
+
     .logo-container {
         display: flex;
         max-width: 101px;
@@ -17,11 +19,18 @@ nav {
             margin: 0 25px;
             align-self: center;
         }
+        .nav-link:hover{
+            color: white;
+            background: linear-gradient(to right, #3460AD, #34ADAD);
+            padding: 0.5em;
+            border-radius: 1.5em;
+            transition:all 0.3s ease 0s;
+        }
         .sign-up {
             color: white;
             padding: 12px 30px 12px 30px;
             border-radius: 30px;
-            background: linear-gradient(90deg, #3460AD 0%, #34ADAD 100%);
+          
         }
     }
 }
