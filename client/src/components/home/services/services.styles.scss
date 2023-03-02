@@ -4,13 +4,28 @@
     .circle {
         border-radius: 50%;
         border: 2px solid;
+        &__primary {
+            border-color: rgba(236, 159, 5, 0.84);
+        }&__secondary {
+            border-color: rgba(52, 96, 173, 1);
+        }
+        &__tertiary {
+            border-color: black;
+        }
     }
     .call-to-action {
         position: relative;
         display: grid;
         grid-template-columns: 53ch;
+        margin: 4vw;
         h1 {
             font-size: 3.5em;
+            color: #3460AD;
+            margin-bottom:2vh;
+        }
+        &__tagline {
+            margin: 0;
+            color: #EB8D22;
         }
         .circle {
             position: absolute;
@@ -19,14 +34,12 @@
                 width: 75px;
                 top: 55%;
                 right: 38%;
-                border-color: rgba(236, 159, 5, 0.84);
             }
             &__tertiary {
                 top: 4%;
                 right: 4%;
                 height: 24px;
                 width: 24px;
-                border-color: black;
             }
             &__tertiary:nth-of-type(2) {
                 top: 105%;
@@ -45,8 +58,8 @@
             right: 0;
         }
         &.triangle_two {
-            top: 60%;
-            left: -1%;
+            top: 65%;
+            left: -2%;
         }
     }
     .card-container {
@@ -55,13 +68,29 @@
         justify-content: center;
         .circle {
             position: relative;
-            border: 8px solid;
             &__secondary {
+                border: 8px solid rgba(52, 96, 173, 1);
                 bottom: 15vh;
                 left: 2%;
                 height: 130px;
                 width: 130px;
-                border-color: rgba(52, 96, 173, 1);
+            }
+            &__primary {
+                height: 35px;
+                width: 35px;
+                left: 10%;
+            }
+            &__tertiary {
+                height: 35px;
+                width: 35px;
+                align-self: end;
+                right: 35vw;
+                top: 15vh;
+            }&__secondary {
+                &.right {
+                    top: 48vh;
+                    left: -10vw;
+                }
             }
         }
         .card {

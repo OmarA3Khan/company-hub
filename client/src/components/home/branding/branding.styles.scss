@@ -1,5 +1,5 @@
 .branding-section {
-    padding-top: 20vh;
+    padding-top: 15vh;
     .row {
         display: flex;
         flex-direction: row;
@@ -8,19 +8,46 @@
     &__one {
         .column {
             h1 {
-                margin: 2vh 0;
                 font-size: 3.5em;
+            }
+            .line1{
+                margin-bottom:0;
+                color: #3460AD;
+            }
+            .line2{
+                margin-top:0;
+                color: #EB8D22;
             }
         }
         .column:nth-of-type(1) {
             padding-right: 13vw;
+            margin: 2vh 4vw;
         }
     }
     &__two {
         .column {
             h1 {
                 font-size: 3em;
+                color: #3460AD;
+                margin-bottom: 3.5vh;
+            }
+
+            .image-container1{
+                margin: 2vh 4vw;
             }
         }
+    }
+    &__button {
+        font-size: 20px;
+        background: linear-gradient(to right, #3460AD, #34ADAD);
+        border-style: none;
+        padding: 13px 22px;
+        color: #fff;
+        border-radius:2em;
+        margin-top:2vh;
+    }
+    .image-container-one{
+        margin-right: 6vw;
+        margin-bottom: 3vh;
     }
 }

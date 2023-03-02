@@ -10,13 +10,13 @@ const Branding = () => {
         <div className="branding-section">
             <div className="branding-section__one row">
                 <div className="column">
-                   <h1>Your Growth</h1>
-                   <h1>Our Priority</h1>
+                   <h1 className='line1'>Your Growth</h1>
+                   <h1 className='line2'>Our Priority</h1>
                    <p>
                    A team of specialists working relentlessly for clients around the globe with a monastic focus on growth
                    using agile techniques in DevOps
                    </p>
-                   <button>Talk To Our Experts</button>
+                   <button className='branding-section__button'>Talk To Our Experts</button>
                 </div>
                 <div className="column">
                     <div className='image-container-one'>

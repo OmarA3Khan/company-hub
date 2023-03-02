@@ -8,7 +8,7 @@ const Services = () => {
         <div className="services-section">
             <div className='call-to-action'>
                 <h1>What we do</h1>
-                <p>Prepare for an Agile Future</p>
+                <p className='call-to-action__tagline'>Prepare for an Agile Future</p>
                 <p>
                     Maximize the ROI of your organization and empower your business to be more agile, responsive, and productive.
                     Embrace new intelligent technologies, automate inefficiencies and move your business forward.
@@ -43,11 +43,13 @@ const Services = () => {
                         <div className='rectangle'></div>
                     </div>
                 </div>
+                <div className='circle circle__primary' />
+                <div className='circle circle__tertiary' />
+                <div className='circle circle__secondary right' />
             </div>
             <div className='image-container--triangle triangle_two'>
                 <TraingleTwo />
             </div>
-            <h1>Testing</h1>
         </div>
     )
 };
