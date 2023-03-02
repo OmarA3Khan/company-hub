@@ -18,13 +18,13 @@ nav {
             text-decoration: none;
             margin: 0 25px;
             align-self: center;
+            padding: 0.5em;
+            border-radius: 1.5em;
+            transition:all 0.2s ease 0s;
         }
         .nav-link:hover{
             color: white;
             background: linear-gradient(to right, #3460AD, #34ADAD);
-            padding: 0.5em;
-            border-radius: 1.5em;
-            transition:all 0.3s ease 0s;
         }
         .sign-up {
             color: white;

@@ -16,7 +16,7 @@ const Branding = () => {
                    A team of specialists working relentlessly for clients around the globe with a monastic focus on growth
                    using agile techniques in DevOps
                    </p>
-                   <button>Talk To Our Experts</button>
+                   <button className='branding-section__button'>Talk To Our Experts</button>
                 </div>
                 <div className="column">
                     <div className='image-container-one'>
