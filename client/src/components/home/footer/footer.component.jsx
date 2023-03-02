@@ -1,8 +1,10 @@
-import './footer.styles.scss';
+import './footer.styles.scss'
+//import  {ReactComponent as Footerimage} from '../../../assets/footer.png'
+
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer img">
             <div className="sb-footer section-padding">
                 <div className="sb-footer-links">
                     <div className="sb-footer-links-div">
