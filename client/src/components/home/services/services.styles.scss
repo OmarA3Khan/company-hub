@@ -1,23 +1,75 @@
 .services-section {
     margin-top: 10vh;
+    position: relative;
+    .circle {
+        border-radius: 50%;
+        border: 2px solid;
+    }
     .call-to-action {
+        position: relative;
         display: grid;
         grid-template-columns: 53ch;
         h1 {
             font-size: 3.5em;
         }
+        .circle {
+            position: absolute;
+            &__primary {
+                height: 75px;
+                width: 75px;
+                top: 55%;
+                right: 38%;
+                border-color: rgba(236, 159, 5, 0.84);
+            }
+            &__tertiary {
+                top: 4%;
+                right: 4%;
+                height: 24px;
+                width: 24px;
+                border-color: black;
+            }
+            &__tertiary:nth-of-type(2) {
+                top: 105%;
+                left: 4%;
+                height: 53px;
+                width: 53px;
+            }
+        }
     }
-    // .image-container {
-    // }
+    .image-container--triangle {
+        max-width: 53%;
+        position: absolute;
+        z-index: -1;
+        &.triangle_one {
+            top: 8%;
+            right: 0;
+        }
+        &.triangle_two {
+            top: 60%;
+            left: -1%;
+        }
+    }
     .card-container {
         align-items: center;
         display: flex;
         justify-content: center;
+        .circle {
+            position: relative;
+            border: 8px solid;
+            &__secondary {
+                bottom: 15vh;
+                left: 2%;
+                height: 130px;
+                width: 130px;
+                border-color: rgba(52, 96, 173, 1);
+            }
+        }
         .card {
-            max-width: 50vw;
+            margin-top: 12vh;
+            max-width: 55vw;
             border-radius: 30px;
             background: linear-gradient(222.87deg, rgba(236, 159, 5, 0.54) -0.68%, rgba(255, 78, 0, 0.54) 123.82%);
-            padding: 5vh 4.5vw;
+            padding: 5.5vh 5.5vw;
             .row {
                 border-radius: 35px;
                 display: flex;

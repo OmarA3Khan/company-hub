@@ -1,5 +1,7 @@
 import './services.styles.scss';
 import { ReactComponent as ServicesImage1 } from '../../../assets/servicesImage1.svg';
+import { ReactComponent as TraingleOne } from '../../../assets/Polygon19.svg';
+import { ReactComponent as TraingleTwo } from '../../../assets/Polygon22.svg';
 
 const Services = () => {
     return (
@@ -11,11 +13,15 @@ const Services = () => {
                     Maximize the ROI of your organization and empower your business to be more agile, responsive, and productive.
                     Embrace new intelligent technologies, automate inefficiencies and move your business forward.
                 </p>
+                <div className='circle circle__primary' />
+                <div className='circle circle__tertiary' />
+                <div className='circle circle__tertiary' />
             </div>
-            <div className='image-container'>
-                {/* <div className='triangle'></div> */}
+            <div className='image-container--triangle triangle_one'>
+                <TraingleOne />
             </div>
             <div className='card-container'>
+                <div className='circle circle__secondary' />
                 <div className='card'>
                     <div className='row'>
                         <div className='image-container'>
@@ -38,6 +44,10 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+            <div className='image-container--triangle triangle_two'>
+                <TraingleTwo />
+            </div>
+            <h1>Testing</h1>
         </div>
     )
 };
