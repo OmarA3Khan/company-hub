@@ -35,15 +35,15 @@
                 margin-bottom: 3.5vh;
             }
 
-        .image-container1{
-            margin: 2vh 4vw;
-        }
+            .image-container1{
+                margin: 2vh 4vw;
+            }
         }
     }
-    button{
+    &__button {
         background: linear-gradient(to right, #3460AD, #34ADAD);
         border-style: none;
-        padding: 1em;
+        padding: 13px 22px;
         color: #fff;
         border-radius:2em;
         margin-top:2vh;
