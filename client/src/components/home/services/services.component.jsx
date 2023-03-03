@@ -1,7 +1,7 @@
 import './services.styles.scss';
 import { ReactComponent as ServicesImage1 } from '../../../assets/servicesImage1.svg';
-import { ReactComponent as TraingleOne } from '../../../assets/Polygon19.svg';
-import { ReactComponent as TraingleTwo } from '../../../assets/Polygon22.svg';
+import { ReactComponent as TraingleOne } from '../../../assets/TriangleOne.svg';
+import { ReactComponent as TraingleTwo } from '../../../assets/TriangleTwo.svg';
 
 const Services = () => {
     return (

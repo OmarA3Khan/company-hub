@@ -1,7 +1,6 @@
-
-
 import { ReactComponent as BrandingImageOne } from '../../../assets/triangle_city.svg';
-import { ReactComponent as BrandingImageTwo } from '../../../assets/brandImageTwo.svg';
+import { ReactComponent as BrandingImageTwo } from '../../../assets/BrandingImgTwo.svg';
+// import { ReactComponent as BrandingImageTwoBg } from '../../../assets/Rectangle15.svg';
 
 import './branding.styles.scss'
 
@@ -26,7 +25,8 @@ const Branding = () => {
             </div>
             <div className="branding-section__two row">
                 <div className="column"> 
-                    <div className='image-container1'>
+                    <div className='column__image-container'>
+                        <div className='column__rectangle'></div>
                         <BrandingImageTwo />
                     </div>
                 </div>

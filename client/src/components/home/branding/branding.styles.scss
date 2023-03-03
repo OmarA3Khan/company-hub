@@ -26,14 +26,26 @@
     }
     &__two {
         .column {
+            width: 44%;
             h1 {
                 font-size: 3em;
                 color: #3460AD;
                 margin-bottom: 3.5vh;
             }
 
-            .image-container1{
+            &__image-container {
+                position: relative;
                 margin: 2vh 4vw;
+            }
+
+            &__rectangle {
+                position: absolute;
+                border: 22px solid #EB8D22;
+                height: 360px;
+                transform: rotate(45deg);
+                width: 360px;
+                left: 30%;
+                z-index: -1;
             }
         }
     }
