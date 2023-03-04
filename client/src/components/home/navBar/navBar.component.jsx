@@ -7,19 +7,20 @@ import './navBar.styles.scss'
 const navlinks = [
     {name: 'Home', src: '#'},
     {name: 'Services', src: '#'},
+    {name: 'Hub', src: '#'},
     {name: 'Login', src: '#'},
     {name: 'Sign Up', src: '#'},
 ]
 
 const HomePageNav = () => {
     return (
-        <nav>
-            <div className="logo-container">
+        <nav className='navbar'>
+            <div className="navbar__logo-container">
                 <Link>
                     <Logo />
                 </Link>
             </div>
-            <ul className='nav-links-container'>
+            <ul className='navbar__nav-links-container'>
                 {navlinks.map((navLink, index) => <Link className='nav-link' to={navLink.src} key={index}>{navLink.name}</Link>)}
             </ul> 
         </nav>

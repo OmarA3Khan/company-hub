@@ -1,6 +1,5 @@
 import { ReactComponent as BrandingImageOne } from '../../../assets/triangle_city.svg';
-import { ReactComponent as BrandingImageTwo } from '../../../assets/BrandingImgTwo.svg';
-// import { ReactComponent as BrandingImageTwoBg } from '../../../assets/Rectangle15.svg';
+import { ReactComponent as BrandingImage } from '../../../assets/BrandingImg.svg';
 
 import './branding.styles.scss'
 
@@ -8,29 +7,27 @@ const Branding = () => {
     return (
         <div className="branding-section">
             <div className="branding-section__one row">
-                <div className="column">
-                   <h1 className='line1'>Your Growth</h1>
-                   <h1 className='line2'>Our Priority</h1>
+                <div className="branding-section__narrative">
+                   <h1>Your Growth</h1>
+                   <h1>Our Priority</h1>
                    <p>
                    A team of specialists working relentlessly for clients around the globe with a monastic focus on growth
                    using agile techniques in DevOps
                    </p>
                    <button className='branding-section__button'>Talk To Our Experts</button>
                 </div>
-                <div className="column">
-                    <div className='image-container-one'>
-                        <BrandingImageOne />
-                    </div>
+                <div className="image-container">
+                    <BrandingImageOne />
                 </div>
             </div>
             <div className="branding-section__two row">
-                <div className="column"> 
-                    <div className='column__image-container'>
-                        <div className='column__rectangle'></div>
-                        <BrandingImageTwo />
+                <div className="branding-section__image"> 
+                    <div className='image-container'>
+                        <div className='rectangle' />
+                        <BrandingImage />
                     </div>
                 </div>
-                <div className="column">
+                <div className="branding-section__narrative">
                     <h1>Embrace Cloud and Internet Technology and Transform Your Enterprise</h1>
                     <p>
                         Our team of specialists strives to deliver exceptional results for clients worldwide, using a steadfast approach

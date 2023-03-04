@@ -13,7 +13,7 @@
             border-color: black;
         }
     }
-    .call-to-action {
+    &__cta {
         position: relative;
         display: grid;
         grid-template-columns: 53ch;
@@ -119,7 +119,7 @@
             justify-content: center;
             position: relative;
             top: 20px;
-            .rectangle {
+            .toggle-button {
                 margin: 0 10px;
                 height: 5px;
                 width: 50px;
@@ -127,4 +127,26 @@
             }
         }
     }
+}
+
+.animation {
+    -webkit-animation: fadeinout 2s;
+    animation: fadeinout 2s;
+    opacity: 1;
+}
+  
+@keyframes fadeinout {
+  
+  50% {
+    transform: translateY(-8vh);
+    opacity: 0; 
+  }
+  80% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-4vh);
+    opacity: 1;
+  }
 }

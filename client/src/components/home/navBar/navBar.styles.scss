@@ -1,14 +1,14 @@
-nav {
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 2vh 4vw;
 
-    .logo-container {
+    &__logo-container {
         display: flex;
         max-width: 101px;
     }
-    .nav-links-container {
+    &__nav-links-container {
         display: flex;
         flex-direction: row;
         list-style: none;

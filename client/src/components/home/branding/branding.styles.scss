@@ -5,48 +5,43 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    &__one {
-        .column {
-            h1 {
-                font-size: 3.5em;
-            }
-            .line1{
-                margin-bottom:0;
-                color: #3460AD;
-            }
-            .line2{
-                margin-top:0;
-                color: #EB8D22;
-            }
+    &__narrative {
+        h1 {
+            font-size: 3.5em;
         }
-        .column:nth-of-type(1) {
-            padding-right: 13vw;
-            margin: 2vh 4vw;
+        h1:nth-of-type(1) {
+            margin-bottom:0;
+            color: #3460AD;
+        }
+        h1:nth-of-type(2) {
+            margin-top:0;
+            color: #EB8D22;
         }
     }
-    &__two {
-        .column {
-            width: 44%;
-            h1 {
-                font-size: 3em;
-                color: #3460AD;
-                margin-bottom: 3.5vh;
-            }
+    &__narrative, &__image {
+        width: 44%;
+    }
+    &__image  {
+        .image-container {
+            position: relative;
+            margin: 2vh 4vw;
+        }
 
-            &__image-container {
-                position: relative;
-                margin: 2vh 4vw;
-            }
-
-            &__rectangle {
-                position: absolute;
-                border: 22px solid #EB8D22;
-                height: 360px;
-                transform: rotate(45deg);
-                width: 360px;
-                left: 30%;
-                z-index: -1;
-            }
+        .rectangle {
+            position: absolute;
+            border: 22px solid #EB8D22;
+            height: 360px;
+            transform: rotate(45deg);
+            width: 360px;
+            left: 30%;
+            z-index: -1;
+        }
+    }
+    &__narrative {
+        h1 {
+            font-size: 3em;
+            color: #3460AD;
+            margin-bottom: 3.5vh;
         }
     }
     &__button {
@@ -57,9 +52,5 @@
         color: #fff;
         border-radius:2em;
         margin-top:2vh;
-    }
-    .image-container-one{
-        margin-right: 6vw;
-        margin-bottom: 3vh;
     }
 }
