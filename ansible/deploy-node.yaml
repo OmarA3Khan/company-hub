@@ -11,3 +11,10 @@
         src: /home/ec2-user/client-0.1.0.tgz
         dest: /home/ec2-user/
         remote_src: yes
+    - name: Install Dependencies
+      npm:
+        path: /home/ec2-user/package
+    - name: Start the application
+      command:
+        chdir: /home/ec2-user/package
+        cmd: npm start
