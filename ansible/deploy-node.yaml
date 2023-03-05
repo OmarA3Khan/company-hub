@@ -20,4 +20,7 @@
         cmd: npm start
       async: 1000
       poll: 0
-      
+    - name: Ensure the app is running
+      shell: ps aux | grep node
+      register: app_status
+    - debug: msg={{app_status.stdout_lines}}
