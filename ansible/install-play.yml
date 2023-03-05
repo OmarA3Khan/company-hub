@@ -1,0 +1,12 @@
+---
+- name: Install node and npm
+  hosts: localhost
+  tasks:
+    - name: Update apt repo and cache
+      yum: 
+        update_cache: yes 
+    - name: Install nodejs and npm
+      yum:
+        name:
+          - nodejs
+          - npm
