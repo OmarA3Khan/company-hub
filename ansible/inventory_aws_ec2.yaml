@@ -2,3 +2,6 @@
 plugin: aws_ec2
 regions:
   - us-east-1
+filters:
+  tag:Name: my*
+  instance-state-name: running
