@@ -1,6 +1,6 @@
 ---
 - name: Deploy nodejs app
-  hosts: aws_ec2
+  hosts: _Name_my_server
   tasks:
     - name: Copy nodejs folder to a server
       copy:
