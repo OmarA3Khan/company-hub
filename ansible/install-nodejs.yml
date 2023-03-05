@@ -1,8 +1,9 @@
 ---
 - name: Install node and npm
-  hosts: localhost
+  hosts: 18.204.7.236
+  become: yes
   tasks:
-    - name: Update apt repo and cache
+    - name: Update repo and cache
       yum: 
         update_cache: yes 
     - name: Install nodejs and npm
