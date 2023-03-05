@@ -1,0 +1,27 @@
+---
+- name: Install node and npm
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Update repo and cache
+      yum: 
+        update_cache: yes 
+    - name: Install nodejs and npm
+      yum:
+        name:
+          - nodejs
+          - npm
+    - name: Clone the portal repository
+      git: 
+        repo: https://github.com/OmarA3Khan/company-hub.git
+        dest: /portal/company-hub/
+        clone: yes
+        update: yes
+        force: true
+    - name: Install Dependencies
+      npm:
+        path: /portal/company-hub/client
+    - name: Generate the artifacts
+      command:
+        chdir: /portal/company-hub/client
+        cmd: npm pack
