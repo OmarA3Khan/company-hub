@@ -1,0 +1,10 @@
+---
+- name: Install pre-requisites for aws dynamic inventory
+  hosts: localhost
+  tasks:
+    - name: Install boto3 and botocore
+      pip:
+        name:
+          - boto3
+          - botocore
+          - awscli
