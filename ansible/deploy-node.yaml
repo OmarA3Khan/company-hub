@@ -1,6 +1,6 @@
 ---
 - name: Deploy nodejs app
-  hosts: 18.204.7.236
+  hosts: dev
   tasks:
     - name: Copy nodejs folder to a server
       copy:
@@ -17,9 +17,7 @@
     - name: Start the application
       command:
         chdir: /home/ec2-user/package
-        cmd: npm start
-      async: 1000
-      poll: 0
+        cmd: npm start &
     - name: Ensure the app is running
       shell: ps aux | grep node
       register: app_status

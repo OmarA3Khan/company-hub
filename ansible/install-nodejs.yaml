@@ -1,6 +1,6 @@
 ---
 - name: Install node and npm
-  hosts: 18.204.7.236
+  hosts: dev
   become: yes
   tasks:
     - name: Update repo and cache

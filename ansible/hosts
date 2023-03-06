@@ -1,1 +1,1 @@
-18.204.7.236 ansible_ssh_private_key_file=/root/.ssh/portal.pem ansible_user=ec2-user
+dev ansible_host=3.237.78.41 ansible_ssh_private_key_file=/root/.ssh/portal.pem ansible_user=ec2-user
