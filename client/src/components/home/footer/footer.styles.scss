@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .sb-footer-padding{
     padding: 1rem 1rem;
 }
@@ -54,3 +55,51 @@ hr{
     line-height: 15px;
     color:#fff;
 }
+=======
+.footer {
+    margin-top: 20%;
+    color: white;
+    background: linear-gradient(180deg, #040C56 0%, #346BAD 100%);
+    h2 {
+        margin: 10px 0 0px 0;
+    }
+    ul{
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    &__company-vision {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20%;
+        text-align: center;
+    }
+    &__cta {
+        .column {
+            .icon {
+                filter: invert(98%) sepia(1%) saturate(0%) hue-rotate(281deg) brightness(102%) contrast(103%);
+            }
+            .icon-container {
+                color: white;
+                max-width: 3vw;
+            }
+        }
+        display: flex;
+        justify-content: space-around;
+        .column:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .column:nth-of-type(2) {
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+>>>>>>> Stashed changes

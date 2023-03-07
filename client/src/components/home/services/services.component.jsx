@@ -3,8 +3,13 @@ import { ReactComponent as ServicesImage1 } from '../../../assets/servicesImage1
 
 const Services = () => {
     return (
+<<<<<<< Updated upstream
         <div className="services-section">
             <div className='call-to-action'>
+=======
+        <div className="services-section" id="one">
+            <div className='services-section__cta cta'>
+>>>>>>> Stashed changes
                 <h1>What we do</h1>
                 <p className='forcolor'>Prepare for an Agile Future</p>
                 <p>
