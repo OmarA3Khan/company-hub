@@ -1,4 +1,4 @@
-import { ReactComponent as LinkedInIcon } from '../../../assets/linkedIn.svg';
+import { ReactComponent as LinkedInIcon } from '../../../assets/icons/linkedIn.svg';
 import { ReactComponent as Partner1 } from '../../../assets/partner-aws.svg';
 import { ReactComponent as Partner2 } from '../../../assets/partner-microsoft.svg';
 import { Link } from 'react-router-dom';
