@@ -1,0 +1,11 @@
+.company-hub {
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+    &__outlet-container {
+        width: 100%;
+        background: rgba(244, 245, 247, 0.8);
+        border-radius: 40px;
+    }
+}

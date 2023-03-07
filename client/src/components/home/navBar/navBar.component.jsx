@@ -7,7 +7,7 @@ import './navBar.styles.scss'
 const navlinks = [
     {name: 'Home', src: '#'},
     {name: 'Services', src: '#'},
-    {name: 'Hub', src: '#'},
+    {name: 'Hub', src: '/hub'},
     {name: 'Login', src: '#'},
     {name: 'Sign Up', src: '#'},
 ]
