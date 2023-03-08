@@ -1,27 +1,15 @@
-// import { ReactSVG } from "react-svg";
-
-// const Icon = (name) => {
-//   return <ReactSVG src={`./${name}.svg`}
-//   afterInjection={(svg) => {
-//     console.log('svg:', svg)
-//   }} />;
-// };
-
-// export default Icon;
-
-// import React from "react";
 import PropTypes from "prop-types";
 import iconPath from "../../../assets/icons/iconsLib";
 
 // const defaultStyles = { display: "inline-block", verticalAlign: "middle" };
 
-const Icon = ({ size, color, icon, className, style, viewBox }) => {
+const Icon = ({ size, color, icon, className, viewBox }) => {
   // const styles = { ...defaultStyles, ...style };
   return (
     <svg
       className={className}
       // style={styles}
-      // viewBox={viewBox}
+      viewBox={viewBox}
       width={`${size}px`}
       height={`${size}px`}
       xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +30,10 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
   icon: PropTypes.string.isRequired,
   viewBox: PropTypes.string.isRequired,
-  style: PropTypes.shape(PropTypes.object),
+  // style: PropTypes.shape(PropTypes.object),
   className: PropTypes.string,
 };
 
