@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 70px;
+
+    &__container-left {
+        display: flex;
+        max-width: 101px;
+    }
+    &__container-right {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        .nav-link {
+            color: black;
+            text-decoration: none;
+            margin: 0 25px;
+            align-self: center;
+            padding: 0.5em;
+            border-radius: 1.5em;
+            transition:all 0.2s ease 0s;
+        }
+    }
+}

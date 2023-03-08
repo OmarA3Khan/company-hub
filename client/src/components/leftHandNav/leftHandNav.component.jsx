@@ -7,7 +7,7 @@ import './leftHandNav.styles.scss';
 const defaultNavigationUrls = [
   {
     label: 'Hub',
-    src: 'hub',
+    src: '',
     icon: 'home',
     id: 'nav-hub',
   },
@@ -51,16 +51,12 @@ const LeftHandNav = () => {
           defaultNavigationUrls.map((navLink) => {
             return(
               <li className='left-hand-nav__items__nav-item' key={navLink.id}>
-                {/* <Link className='nav-link' to={navLink.src}>
-                  <Icon icon={navLink.icon} size={32} /> 
-                  <span>{navLink.label}</span>
-                </Link> */}
                 <NavLink
-                  className='nav-link'
-                  activeClassName='active' // add the 'active' class when the link is active
+                  end
+                  className={['nav-link', ({isActive}) => (isActive ? "active" : '')].join(' ')}
                   to={navLink.src} >
                     <span className='pipe'></span>
-                    <Icon icon={navLink.icon} size={32} />
+                    <Icon className='icon' icon={navLink.icon} size={24} />
                     <span>{navLink.label}</span>
                 </NavLink>
               </li>
