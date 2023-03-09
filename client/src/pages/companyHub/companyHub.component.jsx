@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 import LeftHandNav from '../../components/leftHandNav/leftHandNav.component';
 import Header from '../../components/header/header.component';
-
+import Info from '../../components/portal/info/info-row.component';
 import './companyHub.styles.scss';
 
 const CompanyHub = () => {
@@ -13,6 +13,7 @@ const CompanyHub = () => {
                 <LeftHandNav />
                 <div className='company-hub__outlet-container'>
                     <Outlet />
+                    <Info/>
                 </div>
             </div>
         </div>
