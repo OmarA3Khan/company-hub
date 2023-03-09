@@ -1,0 +1,9 @@
+.company-hub__row {
+  display: flex;
+  flex-direction: row;
+}
+.company-hub__outlet-container {
+  width: 100%;
+  background: rgba(244, 245, 247, 0.8);
+  border-radius: 40px;
+}/*# sourceMappingURL=companyHub.styles.css.map */

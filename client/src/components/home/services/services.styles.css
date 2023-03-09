@@ -1,0 +1,150 @@
+.services-section {
+  margin-top: 10vh;
+  position: relative;
+}
+.services-section .circle {
+  border-radius: 50%;
+  border: 2px solid;
+}
+.services-section .circle__primary {
+  border-color: rgba(236, 159, 5, 0.84);
+}
+.services-section .circle__secondary {
+  border-color: rgb(52, 96, 173);
+}
+.services-section .circle__tertiary {
+  border-color: black;
+}
+.services-section__cta {
+  position: relative;
+  display: grid;
+  grid-template-columns: 53ch;
+  margin: 4vw;
+}
+.services-section__cta h1 {
+  font-size: 3.5em;
+  color: #3460AD;
+  margin-bottom: 2vh;
+}
+.services-section__cta__tagline {
+  margin: 0;
+  color: #EB8D22;
+}
+.services-section__cta .circle {
+  position: absolute;
+}
+.services-section__cta .circle__primary {
+  height: 75px;
+  width: 75px;
+  top: 55%;
+  right: 38%;
+}
+.services-section__cta .circle__tertiary {
+  top: 4%;
+  right: 4%;
+  height: 24px;
+  width: 24px;
+}
+.services-section__cta .circle__tertiary:nth-of-type(2) {
+  top: 105%;
+  left: 4%;
+  height: 53px;
+  width: 53px;
+}
+.services-section .image-container--triangle {
+  max-width: 53%;
+  position: absolute;
+  z-index: -1;
+}
+.services-section .image-container--triangle.triangle_one {
+  top: 8%;
+  right: 0;
+}
+.services-section .image-container--triangle.triangle_two {
+  top: 65%;
+  left: -2%;
+}
+.services-section .card-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.services-section .card-container .circle {
+  position: relative;
+}
+.services-section .card-container .circle__secondary {
+  border: 8px solid rgb(52, 96, 173);
+  bottom: 15vh;
+  left: 2%;
+  height: 130px;
+  width: 130px;
+}
+.services-section .card-container .circle__primary {
+  height: 35px;
+  width: 35px;
+  left: 10%;
+}
+.services-section .card-container .circle__tertiary {
+  height: 35px;
+  width: 35px;
+  align-self: end;
+  right: 35vw;
+  top: 15vh;
+}
+.services-section .card-container .circle__secondary.right {
+  top: 48vh;
+  left: -10vw;
+}
+.services-section .card-container .card {
+  margin-top: 12vh;
+  max-width: 55vw;
+  border-radius: 30px;
+  background: linear-gradient(222.87deg, rgba(236, 159, 5, 0.54) -0.68%, rgba(255, 78, 0, 0.54) 123.82%);
+  padding: 5.5vh 5.5vw;
+}
+.services-section .card-container .card .row {
+  border-radius: 35px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 2vw;
+}
+.services-section .card-container .card .row .image-container {
+  max-width: 23vw;
+}
+.services-section .card-container .card .row h3 {
+  font-size: 2.5em;
+}
+.services-section .card-container .toggle-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+}
+.services-section .card-container .toggle-card .toggle-button {
+  margin: 0 10px;
+  height: 5px;
+  width: 50px;
+  background: rgba(47, 46, 65, 0.6);
+}
+
+.animation {
+  animation: fadeinout 2s;
+  opacity: 1;
+}
+
+@keyframes fadeinout {
+  50% {
+    transform: translateY(-8vh);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-4vh);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=services.styles.css.map */

@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Sahana J",
+        "project":"Aquatica",
+        "unit":"DevOps",
+        "time":"UTC+2",
+        "status":"Busy",
+        "assignment":"Internal Project"
+    },
+    {
+        "name":"Skanda Kumar",
+        "project":"Vikings",
+        "unit":"DevOps",
+        "time":"UTC+2",
+        "status":"Busy",
+        "assignment":"Internal Project"
+    },
+    {
+        "name":"Omar Azam",
+        "project":"GAC",
+        "unit":"Development",
+        "time":"UTC+1",
+        "status":"Busy",
+        "assignment":"Internal Project"
+    }
+]

@@ -1,0 +1,49 @@
+.branding-section {
+  padding-top: 15vh;
+}
+.branding-section .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.branding-section__narrative h1 {
+  font-size: 3.5em;
+}
+.branding-section__narrative h1:nth-of-type(1) {
+  margin-bottom: 0;
+  color: #3460AD;
+}
+.branding-section__narrative h1:nth-of-type(2) {
+  margin-top: 0;
+  color: #EB8D22;
+}
+.branding-section__narrative, .branding-section__image {
+  width: 44%;
+}
+.branding-section__image .image-container {
+  position: relative;
+  margin: 2vh 4vw;
+}
+.branding-section__image .rectangle {
+  position: absolute;
+  border: 22px solid #EB8D22;
+  height: 360px;
+  transform: rotate(45deg);
+  width: 360px;
+  left: 30%;
+  z-index: -1;
+}
+.branding-section__narrative h1 {
+  font-size: 3em;
+  color: #3460AD;
+  margin-bottom: 3.5vh;
+}
+.branding-section__button {
+  font-size: 20px;
+  background: linear-gradient(to right, #3460AD, #34ADAD);
+  border-style: none;
+  padding: 13px 22px;
+  color: #fff;
+  border-radius: 2em;
+  margin-top: 2vh;
+}/*# sourceMappingURL=branding.styles.css.map */

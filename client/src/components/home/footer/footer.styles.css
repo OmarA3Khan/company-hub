@@ -1,0 +1,39 @@
+.footer {
+  margin-top: 20%;
+  color: white;
+  background: linear-gradient(180deg, #040C56 0%, #346BAD 100%);
+}
+.footer h2 {
+  margin: 10px 0 0px 0;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer__company-vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20%;
+  text-align: center;
+}
+.footer__cta {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__cta .column .icon {
+  filter: invert(98%) sepia(1%) saturate(0%) hue-rotate(281deg) brightness(102%) contrast(103%);
+}
+.footer__cta .column .icon-container {
+  color: white;
+  max-width: 3vw;
+}
+.footer__cta .column:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__cta .column:nth-of-type(2) p {
+  margin: 0;
+}/*# sourceMappingURL=footer.styles.css.map */

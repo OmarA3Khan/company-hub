@@ -1,0 +1,38 @@
+.left-hand-nav {
+  width: 7%;
+  height: 100vh;
+}
+.left-hand-nav__items {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.left-hand-nav__items__nav-item {
+  padding: 6vh 0;
+  width: 100%;
+}
+.left-hand-nav__items__nav-item .nav-link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  position: relative;
+}
+.left-hand-nav__items__nav-item .nav-link span {
+  display: none;
+}
+.left-hand-nav__items__nav-item .nav-link.active .pipe {
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 45px;
+  border-radius: 50px;
+  background: #EB8D22;
+}
+.left-hand-nav__items__nav-item .nav-link .icon {
+  position: relative;
+  left: 35%;
+  top: 10px;
+}/*# sourceMappingURL=leftHandNav.styles.css.map */

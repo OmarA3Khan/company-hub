@@ -1,0 +1,16 @@
+.home {
+  overflow: hidden;
+  position: relative;
+}
+.home__branding-image-container {
+  position: absolute;
+  top: -5vh;
+  right: -16vw;
+  z-index: -1;
+}
+.home__content-container {
+  padding: 0 4vw;
+}
+.home p {
+  line-height: 32px;
+}/*# sourceMappingURL=home.styles.css.map */
