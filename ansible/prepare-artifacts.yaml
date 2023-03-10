@@ -11,6 +11,16 @@
         name:
           - nodejs
           - npm
+    - name: Create .ssh folder
+      file:
+        path: /root/.ssh
+        state: directory
+        mode: '0700'
+    - name: Create the portal.pem file
+      file:
+        path: /root/.ssh/portal.pem
+        state: file
+        mode: '0400'
     - name: Clone the portal repository
       git: 
         repo: https://github.com/OmarA3Khan/company-hub.git
@@ -18,9 +28,6 @@
         clone: yes
         update: yes
         force: true
-    - name: Install Dependencies
-      npm:
-        path: /portal/company-hub/client
     - name: Generate the artifacts
       command:
         chdir: /portal/company-hub/client
