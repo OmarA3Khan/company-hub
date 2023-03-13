@@ -11,45 +11,56 @@
         overflow-x: hidden;
         margin: 20px;
 
-    &--employees{
-        .information-row {
+        .information-row__header {
+            font-weight: 900;
+            color: rgba(106, 109, 114, 1);
+        }
+        
+        .information-row, .information-row__header {
             display: grid;
-            grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            .header__element {
+                margin: auto;
+            }
         }
+        &--employees {
+            .information-row, .information-row__header {
+                grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
         }
-    button{
+
+        &--projects{
+            .information-row, .information-row__header {
+                grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+        button {
             background-color: #fff;
             border: 1.5px solid #3460AD;
             border-radius: 12px;
             padding: 5px ;
             width:130px;
             height: 30px;
-            color:#4186FF;
+            color:rgba(65, 134, 255, 0.7);
             align-self: center;
             margin-left:auto;
             align-items: center;
             display: flex;
             justify-content: space-around;
+            font-size: 14px;
+            font-weight: 600;
             cursor: pointer;
-
-            // span{
-            //     position: relative;
-            //     bottom: 13px;
-            //     right:3px;
-
-            // }
-    }
+        }
     }
     &__row {
         display: flex;
+        margin: 15px 0;
         .employees-icon {
-            position: relative;
-            top: 22px;
             margin: 0 10px 0 5px;
         }
         h4 {
             font-weight: 600;
             color: rgba(106, 109, 114, 1);
+            margin: 0;
         }
         .employee-count {
             color: rgba(52, 96, 173, 0.64);

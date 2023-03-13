@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 
+import { ReactComponent as RightArrow} from '../../assets/icons/rightArrow.svg';
+
 import InformationRow from "../informationRow/informationRow.component";
 import Icon from '../base/icon/icon.component';
 import StatusOverview from '../statusOverview/statusOverview.component';
-import { ReactComponent as RightArrow} from '../../assets/icons/rightArrow.svg';
+
 import './dashboard.styles.scss';
 
 const Dashboard = () => {
@@ -127,7 +129,6 @@ const Dashboard = () => {
   // the necessary data for the child component.
 
   return (
-
     <div className='dashboard'>
       <div className="dashboard__col">
         <div className='dashboard__container dashboard__container--employees'>
@@ -137,52 +138,68 @@ const Dashboard = () => {
           </div>
           <div className='dashboard__row'>
             <StatusOverview overViewData={overviewData} /> 
-            <button><span>VIEW ALL</span><RightArrow /></button>
+            <button><span>view all</span><RightArrow /></button>
           </div>
-        {
-          employeeData.map((employee, index) => {
-            const { firstName, lastName, designation, project, unit, status, assignmentStatus, timeZone, imgSrc } = employee;
-            const metaData = {
-              firstName,
-              lastName,
-              designation,
-              project,
-              unit,
-              status,
-              assignmentStatus,
-              timeZone,
-              imgSrc
-            };
-            return (
-              <InformationRow key={index} employeeInfo={metaData} />
-            )
-          })
-        }
+          <div className='information-row__header'>
+            <span className='header__element'></span>
+            <span className='header__element'></span>
+            <span className='header__element'>Project</span>
+            <span className='header__element'>Unit</span>
+            <span className='header__element'>Time Zone</span>
+            <span>Status</span>
+            <span className='header__element'>Assignment</span>
+          </div>
+          {
+            employeeData.map((employee, index) => {
+              const { firstName, lastName, designation, project, unit, status, assignmentStatus, timeZone, imgSrc } = employee;
+              const metaData = {
+                firstName,
+                lastName,
+                designation,
+                project,
+                unit,
+                status,
+                assignmentStatus,
+                timeZone,
+                imgSrc
+              };
+              return (
+                <InformationRow key={index} employeeInfo={metaData} />
+              )
+            })
+          }
         </div>
 
-        <div className='dashboard__container'>
+        <div className='dashboard__container dashboard__container--projects'>
           <div className='dashboard__row'>
             <Icon color={'#6A6D72'} className='employees-icon' icon={'project'} size={24} />
             <h4>Projects <span className='employee-count'>{employeeData.length}</span></h4>
-            <button><span>VIEW ALL</span><RightArrow /></button>
+            <button><span>view all</span><RightArrow /></button>
           </div>
-    
-        {
-          projectData.map((project, index) => {
-            const { name, lead, client, startDate, endDate, staffing } = project;
-            const metaData = {
-              name,
-              lead,
-              client,
-              startDate,
-              endDate,
-              staffing
-            };
-            return (
-              <InformationRow key={index} projectInfo={metaData} />
-            )
-          })
-        }
+          <div className='information-row__header'>
+            <span className='header__element'></span>
+            <span className='header__element'>Lead</span>
+            <span className='header__element'>Client</span>
+            <span className='header__element'>Start Date</span>
+            <span className='header__element'>End Date</span>
+            <span className='header__element'>Staffing</span>
+          </div>
+          {
+            projectData.map((project, index) => {
+              const { name, lead, client, startDate, endDate, staffing } = project;
+              const metaData = {
+                name,
+                lead,
+                client,
+                startDate,
+                endDate,
+                staffing
+              };
+              return (
+                <InformationRow key={index} projectInfo={metaData} />
+              )
+            })
+          }
         </div>
       </div>
     </div>
