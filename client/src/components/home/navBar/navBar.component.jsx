@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../../assets/Logo.svg';
+import { ReactComponent as Logo } from '../../../assets/home/Logo.svg';
 
 import './navBar.styles.scss'
 
@@ -16,7 +16,7 @@ const HomePageNav = () => {
     return (
         <nav className='navbar'>
             <div className="navbar__logo-container">
-                <Link>
+                <Link to={'/'}>
                     <Logo />
                 </Link>
             </div>
