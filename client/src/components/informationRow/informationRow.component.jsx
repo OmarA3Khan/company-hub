@@ -27,7 +27,17 @@ const InformationRow = (props) => {
     )
   } else if(projectInfo) {
     return (
-      <h3>Project Info</h3>
+      <div className="information-row">
+        <span className="information-row__pipe" />
+          <span>
+            <strong>{projectInfo.name}</strong>
+          </span>
+        <span>{projectInfo.lead}</span>
+        <span>{projectInfo.client}</span>
+        <span>{projectInfo.startDate}</span>
+        <span>{projectInfo.endDate}</span>
+        <span>{projectInfo.staffing}</span>
+      </div>
     )
   } else if(children) {
     return (

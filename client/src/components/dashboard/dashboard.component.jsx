@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react';
 import InformationRow from "../informationRow/informationRow.component";
 import Icon from '../base/icon/icon.component';
 import StatusOverview from '../statusOverview/statusOverview.component';
-
+import { ReactComponent as RightArrow} from '../../assets/icons/rightArrow.svg';
 import './dashboard.styles.scss';
 
 const Dashboard = () => {
   const [employeeData, setEmployeeData] = useState([]);
+  const [projectData, setProjectData] = useState([]);
   const [overviewData] = useState([
     {
       status: 'sick',
@@ -90,41 +91,99 @@ const Dashboard = () => {
         timeZone: "UTC-10",
       }
     ]);
+    setProjectData([
+      {
+        id: "1",
+        name: "Project1",
+        lead: "John Doe",
+        client: "Client A",
+        startDate: "12/1/24",
+        endDate: "12/2/24",
+        staffing: "12"
+      },
+      {
+        id: "2",
+        name: "Project2",
+        lead: "Jane Doe",
+        client: "Client B",
+        startDate: "12/3/23",
+        endDate: "12/2/24",
+        staffing: "8"
+      },
+      {
+        id: "3",
+        name: "Project3",
+        lead: "Clark Kent",
+        client: "Client C",
+        startDate: "19/3/23",
+        endDate: "01/5/24",
+        staffing: "4"
+      }
+    ]);
+
   }, []);
 
   // OPTIMIZE: if there are more than 1000 employees then it'll be BETTER to modify the API endpoint to only return
   // the necessary data for the child component.
 
   return (
+
     <div className='dashboard'>
-      <div className='dashboard__container'>
-        <div className='dashboard__row'>
-          <Icon color={'#6A6D72'} className='employees-icon' icon={'users'} size={24} />
-          <h4>Employees <span className='employee-count'>{employeeData.length}</span></h4>
+      <div className="dashboard__col">
+        <div className='dashboard__container dashboard__container--employees'>
+          <div className='dashboard__row'>
+            <Icon color={'#6A6D72'} className='employees-icon' icon={'users'} size={24} />
+            <h4>Employees <span className='employee-count'>{employeeData.length}</span></h4>
+          </div>
+          <div className='dashboard__row'>
+            <StatusOverview overViewData={overviewData} /> 
+            <button><span>VIEW ALL</span><RightArrow /></button>
+          </div>
+        {
+          employeeData.map((employee, index) => {
+            const { firstName, lastName, designation, project, unit, status, assignmentStatus, timeZone, imgSrc } = employee;
+            const metaData = {
+              firstName,
+              lastName,
+              designation,
+              project,
+              unit,
+              status,
+              assignmentStatus,
+              timeZone,
+              imgSrc
+            };
+            return (
+              <InformationRow key={index} employeeInfo={metaData} />
+            )
+          })
+        }
         </div>
-        <div className='row'>
-          <StatusOverview overViewData={overviewData} />
-          {/* // button here */}
+
+        <div className='dashboard__container'>
+          <div className='dashboard__row'>
+            <Icon color={'#6A6D72'} className='employees-icon' icon={'project'} size={24} />
+            <h4>Projects <span className='employee-count'>{employeeData.length}</span></h4>
+            <button><span>VIEW ALL</span><RightArrow /></button>
+          </div>
+    
+        {
+          projectData.map((project, index) => {
+            const { name, lead, client, startDate, endDate, staffing } = project;
+            const metaData = {
+              name,
+              lead,
+              client,
+              startDate,
+              endDate,
+              staffing
+            };
+            return (
+              <InformationRow key={index} projectInfo={metaData} />
+            )
+          })
+        }
         </div>
-      {
-        employeeData.map((employee, index) => {
-          const { firstName, lastName, designation, project, unit, status, assignmentStatus, timeZone, imgSrc } = employee;
-          const metaData = {
-            firstName,
-            lastName,
-            designation,
-            project,
-            unit,
-            status,
-            assignmentStatus,
-            timeZone,
-            imgSrc
-          };
-          return (
-            <InformationRow key={index} employeeInfo={metaData} />
-          )
-        })
-      }
       </div>
     </div>
   )
