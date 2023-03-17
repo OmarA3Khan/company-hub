@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import Icon from '../base/icon/icon.component';
+import Icon from '../../base/icon/icon.component';
 
 import './leftHandNav.styles.scss';
 

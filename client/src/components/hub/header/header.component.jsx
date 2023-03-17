@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/home/Logo-sm.svg';
+import { ReactComponent as Logo } from '../../../assets/home/Logo-sm.svg';
 
-import Icon from '../base/icon/icon.component';
-import Avatar from '../base/avatar/avatar.component';
+import Icon from '../../base/icon/icon.component';
+import Avatar from '../../base/avatar/avatar.component';
 // import HeaderUtility from '../headerUtility/headerUtility.component';
 
 import './header.styles.scss';

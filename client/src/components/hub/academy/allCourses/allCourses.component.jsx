@@ -1,7 +1,7 @@
 import "./allCourses.style.scss";
 
-import Image1 from "../../assets/home/course1.jpeg";
-import { ReactComponent as RightArrow} from '../../assets/icons/rightArrow.svg';
+import Image1 from "../../../../assets/home/course1.jpeg";
+import { ReactComponent as RightArrow} from '../../../../assets/icons/rightArrow.svg';
 
 
 const courses = [

@@ -1,5 +1,5 @@
-import Avatar from '../base/avatar/avatar.component';
-import Indicator from '../base/indicator/indicator.component';
+import Avatar from '../../base/avatar/avatar.component';
+import Indicator from '../../base/indicator/indicator.component';
 
 import './informationRow.styles.scss';
 

@@ -3,12 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home.component';
 import Authentication from './pages/authentication/auth.component';
 import CompanyHub from './pages/companyHub/companyHub.component';
-import Dashboard from './components/dashboard/dashboard.component';
-import UserDirectory from './components/userDirectory/userDirectory.component';
-import ProjectDirectory from './components/projectDirectory/projectDirectory.component';
-import Communications from './components/communications/communications.component';
-import Academy from './components/academy/academy.component';
-import Profile from './components/profile/profile.component';
+import Dashboard from './components/hub/dashboard/dashboard.component';
+import UserDirectory from './components/hub/userDirectory/userDirectory.component';
+import ProjectDirectory from './components/hub/projectDirectory/projectDirectory.component';
+import Communications from './components/hub/communications/communications.component';
+import Academy from './components/hub/academy/academy.component';
+import Profile from './components/hub/profile/profile.component';
 
 const App = () => {
 

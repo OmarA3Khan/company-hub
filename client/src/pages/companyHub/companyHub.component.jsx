@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 
-import LeftHandNav from '../../components/leftHandNav/leftHandNav.component';
-import Header from '../../components/header/header.component';
+import LeftHandNav from '../../components/hub/leftHandNav/leftHandNav.component';
+import Header from '../../components/hub/header/header.component';
 
 import './companyHub.styles.scss';
 

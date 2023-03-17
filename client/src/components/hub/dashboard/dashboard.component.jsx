@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import { ReactComponent as RightArrow} from '../../assets/icons/rightArrow.svg';
+import { ReactComponent as RightArrow} from '../../../assets/icons/rightArrow.svg';
 
 import InformationRow from "../informationRow/informationRow.component";
-import Icon from '../base/icon/icon.component';
+import Icon from '../../base/icon/icon.component';
 import StatusOverview from '../statusOverview/statusOverview.component';
 
 import './dashboard.styles.scss';
