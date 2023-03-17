@@ -1,6 +1,6 @@
 import { ReactComponent as LinkedInIcon } from '../../../assets/icons/linkedIn.svg';
-import { ReactComponent as Partner1 } from '../../../assets/partner-aws.svg';
-import { ReactComponent as Partner2 } from '../../../assets/partner-microsoft.svg';
+import { ReactComponent as Partner1 } from '../../../assets/home/partner-aws.svg';
+import { ReactComponent as Partner2 } from '../../../assets/home/partner-microsoft.svg';
 import { Link } from 'react-router-dom';
 
 import './footer.styles.scss';

@@ -1,0 +1,70 @@
+.dashboard {
+    padding: 15px;
+    &__container {
+        height: 50%;
+        width: 55%;
+        background: white;
+        padding: 1px 10px;
+        border-radius: 20px;
+        box-shadow: 0.5px 1px 5px rgba(0, 0, 0, 0.25);
+        overflow: scroll;
+        overflow-x: hidden;
+        margin: 20px;
+
+        .information-row__header {
+            font-weight: 900;
+            color: rgba(106, 109, 114, 1);
+        }
+        
+        .information-row, .information-row__header {
+            display: grid;
+            .header__element {
+                margin: auto;
+            }
+        }
+        &--employees {
+            .information-row, .information-row__header {
+                grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        &--projects{
+            .information-row, .information-row__header {
+                grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+        button {
+            background-color: #fff;
+            border: 1.5px solid #3460AD;
+            border-radius: 12px;
+            padding: 5px ;
+            width:130px;
+            height: 30px;
+            color:rgba(65, 134, 255, 0.7);
+            align-self: center;
+            margin-left:auto;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    &__row {
+        display: flex;
+        margin: 15px 0;
+        .employees-icon {
+            margin: 0 10px 0 5px;
+        }
+        h4 {
+            font-weight: 600;
+            color: rgba(106, 109, 114, 1);
+            margin: 0;
+        }
+        .employee-count {
+            color: rgba(52, 96, 173, 0.64);
+        }
+    }
+    
+}

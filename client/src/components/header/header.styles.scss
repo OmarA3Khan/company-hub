@@ -1,26 +1,58 @@
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     max-height: 70px;
+    padding: 0 1vw;
 
-    &__container-left {
-        display: flex;
-        max-width: 101px;
+    &__logo {
+        max-width: 75%;
     }
-    &__container-right {
+
+    &__greeting {
+        margin: 18px 0 0 48px;
+        h3, p {
+            margin: 0;
+        }
+        h3 {
+            // TODO: ADD THE COLOR TO GLOBAL SCSS FILE
+            color: #6A6D72;
+        }
+        p {
+            font-size: 12px;
+            color: #9394A0;
+        }
+    }
+    &__utilities-container {
+        margin-left: auto;
         display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-around;
-        .nav-link {
-            color: black;
-            text-decoration: none;
-            margin: 0 25px;
-            align-self: center;
-            padding: 0.5em;
-            border-radius: 1.5em;
-            transition:all 0.2s ease 0s;
+        justify-content: space-between;
+        align-items: center;
+        .avatar {
+            margin-right: 5px;
+        }
+        .icon {
+            margin-right: 2vw;
+        }
+        .chevron {
+            &::before {
+                margin-top: 5px;
+                border-style: solid;
+                border-width: 0.2em 0.2em 0 0;
+                content: '';
+                display: inline-block;
+                height: 0.35em;
+                width: 0.35em;
+                position: relative;
+                top: 0.15em;
+                left: 0.15em;
+                transform: rotate(-45deg);
+                vertical-align: top;
+                color: #6A6D72;
+            }
+            &.bottom:before {
+                top: 0;
+                transform: rotate(135deg);
+            }
         }
     }
 }

@@ -1,27 +1,28 @@
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/Logo.svg';
+import { ReactComponent as Logo } from '../../assets/home/Logo-sm.svg';
 
-import './header.styles.scss'
+import Icon from '../base/icon/icon.component';
+import Avatar from '../base/avatar/avatar.component';
+// import HeaderUtility from '../headerUtility/headerUtility.component';
 
-const navlinks = [
-    {name: 'Home', src: '#'},
-    {name: 'Services', src: '#'},
-    {name: 'Hub', src: '/hub'},
-]
+import './header.styles.scss';
 
 const Header = () => {
     return (
         <header className="header">
-            <div className="header__container-left">
-                <Link>
-                    <Logo />
-                </Link>
-                <h3>Hi Joseph</h3>
+            <Link to={'/'}>
+                <Logo className="header__logo" />
+            </Link>
+            <div className='header__greeting'>
+                <h3>Hi Joseph!</h3>
                 <p>Welcome to your dashboard</p>
             </div>
-            <ul className='header__container-right'>
-                {navlinks.map((navLink, index) => <Link className='nav-link' to={navLink.src} key={index}>{navLink.name}</Link>)}
-            </ul>
+            {/* TODO: MAKE THE HEADER UTILITY SECTION A DYNAMIC COMPONENT */}
+            <div className='header__utilities-container'>
+                <Icon className='icon' icon={'bell'} size={24} />
+                <Avatar />
+                <span className='chevron bottom'></span>
+            </div>
         </header>
     )
 };

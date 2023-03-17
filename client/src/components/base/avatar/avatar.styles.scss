@@ -1,0 +1,17 @@
+// TODO: ADD COLOR TO GLOBAL CSS
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    &-img {
+        vertical-align: middle;
+    }
+    &-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        background: rgb(63, 95, 168);
+    }
+}

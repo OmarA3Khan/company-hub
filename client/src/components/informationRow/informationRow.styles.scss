@@ -1,0 +1,33 @@
+.information-row {
+    position: relative;
+    height: 60px;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #6A6D72;
+    margin: 15px 0;
+    &__pipe {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 2.5px;
+        height: 45px;
+        background: rgba(65, 245, 212, 0.6);
+        border-radius: 8px;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
+    &__element {
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+    }
+}

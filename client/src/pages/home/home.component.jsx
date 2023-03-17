@@ -3,7 +3,7 @@ import HomePageNav from '../../components/home/navBar/navBar.component';
 import Branding from '../../components/home/branding/branding.component';
 import Services from '../../components/home/services/services.component';
 import Footer from '../../components/home/footer/footer.component';
-import { ReactComponent as BlueCLoud } from '../../assets/blueCloud.svg';
+import { ReactComponent as BlueCLoud } from '../../assets/home/blueCloud.svg';
 
 import './home.styles.scss';
 

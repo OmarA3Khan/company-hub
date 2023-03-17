@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { ReactComponent as ServicesImage1 } from '../../../assets/servicesImageOne.svg';
-import { ReactComponent as TraingleOne } from '../../../assets/TriangleOne.svg';
-import { ReactComponent as TraingleTwo } from '../../../assets/TriangleTwo.svg';
+import { ReactComponent as ServicesImage1 } from '../../../assets/home/servicesImageOne.svg';
+import { ReactComponent as TraingleOne } from '../../../assets/home/TriangleOne.svg';
+import { ReactComponent as TraingleTwo } from '../../../assets/home/TriangleTwo.svg';
 
 import './services.styles.scss';
 

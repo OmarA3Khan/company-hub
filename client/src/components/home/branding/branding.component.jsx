@@ -1,5 +1,5 @@
-import { ReactComponent as BrandingImageOne } from '../../../assets/triangle_city.svg';
-import { ReactComponent as BrandingImage } from '../../../assets/BrandingImg.svg';
+import { ReactComponent as BrandingImageOne } from '../../../assets/home/triangle_city.svg';
+import { ReactComponent as BrandingImage } from '../../../assets/home/BrandingImg.svg';
 
 import './branding.styles.scss'
 
