@@ -1,89 +1,84 @@
 .all-courses {
-    padding: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 45%;
+  width: 95%;
+  background: #F7F6F9;
+  border:3px solid white;
+  border-radius: 20px;
+  box-shadow: 0.5px 1px 5px rgba(0, 0, 0, 0.25);
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 20px;
+
+  h2{
+    font-weight: 600;
+    color: rgba(106, 109, 114, 1);
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 45%;
-    width: 95%;
-    background: #F7F6F9;
-    border:3px solid white;
-    border-radius: 20px;
-    box-shadow: 0.5px 1px 5px rgba(0, 0, 0, 0.25);
-    overflow: scroll;
-    overflow-x: hidden;
-    margin: 20px;
+    // justify-content: space-between;
+  }
 
-    h2{
-        font-weight: 600;
-        color: rgba(106, 109, 114, 1);
-    }
-  
-    &__heading {
-      margin-bottom: 1.5rem;
-    }
-  
-    &__card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    &__card {
-      width: calc(30% - 1rem);
-      height: 450px;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      background-color: #fff;
-      border-radius: 10px;
-  
-      &:hover {
-        box-shadow: 0 0 4px rgba(10, 3, 56, 0.5);
-      }
-    }
-  
-    &__card-title {
+  &__card,
+  .card {
+    width: calc(21%);
+    margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &__title {
       margin-bottom: 0.5rem;
-      font-size: 1.25rem;
+      font-size: 16px;
       font-weight: bold;
     }
 
-    img{
+    p {
+      font-size: 14px;
+    }
+
+    &__description {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    &:hover {
+      box-shadow: 0 0 4px rgba(10, 3, 56, 0.5);
+    }
+  }
+
+  img {
     width: 90%;
     height: 50%;
-    }
+  }
 
-    .btn{
-        // float:right;
-        background-color: #fff;
-        border: 1.5px solid #3460AD;
-        border-radius: 12px;
-        padding: 5px ;
-        width:110px;
-        height: 30px;
-        color:#4186FF;
-        align-self: center;
-        margin-left:auto;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        cursor: pointer;
-    }
-
-    .view-all{
-        background-color: #fff;
-        border: 1.5px solid #3460AD;
-        border-radius: 12px;
-        padding: 5px ;
-        width:130px;
-        height: 30px;
-        color:#4186FF;
-        align-self: center;
-        margin-left:auto;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        cursor: pointer;
-}
+  .btn {
+    background-color: #fff;
+    border: 1.5px solid #3460AD;
+    border-radius: 12px;
+    padding: 5px ;
+    width:130px;
+    height: 30px;
+    color:rgba(65, 134, 255, 0.7);
+    align-self: center;
+    margin: 0 0 1rem auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
   
 
