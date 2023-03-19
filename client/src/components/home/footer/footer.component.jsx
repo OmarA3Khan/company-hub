@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className='column'>
                     <h3>Partners</h3>
                     <Partner1 className='icon'/>
-                    <Partner2 />
+                    <Partner2 className='icon'/>
                 </div>
                 <div className='column'>
                     <h3>Office</h3>
