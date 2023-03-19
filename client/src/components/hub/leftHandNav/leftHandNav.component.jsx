@@ -57,7 +57,7 @@ const LeftHandNav = () => {
                   to={navLink.src} >
                     <span className='pipe'></span>
                     <Icon className='icon' icon={navLink.icon} size={24} />
-                    <span>{navLink.label}</span>
+                    <span className='label'>{navLink.label}</span>
                 </NavLink>
               </li>
             )
