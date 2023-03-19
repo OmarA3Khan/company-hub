@@ -5,7 +5,7 @@ import './branding.styles.scss'
 
 const Branding = () => {
     return (
-        <div className="branding-section">
+        <div id="branding-section" className="branding-section">
             <div className="branding-section__one row">
                 <div className="branding-section__narrative">
                    <h1>Your Growth</h1>

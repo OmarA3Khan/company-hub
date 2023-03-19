@@ -5,8 +5,6 @@ import './navBar.styles.scss'
 
 //NEED TO CREATE DYNAMIC LINKS FOR THE NAVBAR | THIS IS JUST TEMPORARY
 const navlinks = [
-    {name: 'Home', src: '#'},
-    {name: 'Services', src: '#'},
     {name: 'Hub', src: '/hub'},
     {name: 'Login', src: '#'},
     {name: 'Sign Up', src: '#'},

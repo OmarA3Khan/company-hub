@@ -47,7 +47,7 @@ const Services = () => {
     }
 
     return (
-        <div className="services-section">
+        <div id="services-section" className="services-section">
             <div className='services-section__cta cta'>
                 <h1>What we do</h1>
                 <p className='cta__tagline'>Prepare for an Agile Future</p>
