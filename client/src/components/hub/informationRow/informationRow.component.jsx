@@ -8,7 +8,7 @@ const InformationRow = (props) => {
   if(employeeInfo) {
     return (
       <div className="information-row">
-        <span className="information-row__pipe" />
+        <span className={`information-row__pipe pipe--${employeeInfo.unit?.toLowerCase()}`} />
         <Avatar name={employeeInfo.firstName + ' ' + employeeInfo.lastName} imgSrc={employeeInfo.imgSrc}/>
         <div className="information-row__col">
           <span>
@@ -20,7 +20,7 @@ const InformationRow = (props) => {
         <span className='information-row__element'>{employeeInfo.unit}</span>
         <span className='information-row__element'>{employeeInfo.timeZone}</span>
         <div className='row'>
-          <Indicator status={'busy'}/>
+          <Indicator status={employeeInfo.status}/>
           <span>{employeeInfo.status}</span>
         </div>
         <span className='information-row__element'>{employeeInfo.assignmentStatus}</span>

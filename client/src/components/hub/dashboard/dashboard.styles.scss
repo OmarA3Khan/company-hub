@@ -16,20 +16,23 @@
             color: rgba(106, 109, 114, 1);
         }
         
-        .information-row, .information-row__header {
+        .information-row,
+        .information-row__header {
             display: grid;
             .header__element {
                 margin: auto;
             }
         }
         &--employees {
-            .information-row, .information-row__header {
+            .information-row,
+            .information-row__header {
                 grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
             }
         }
 
         &--projects{
-            .information-row, .information-row__header {
+            .information-row,
+            .information-row__header {
                 grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
             }
         }
@@ -47,7 +50,6 @@
             display: flex;
             justify-content: space-around;
             font-size: 14px;
-            font-weight: 600;
             cursor: pointer;
         }
     }
@@ -59,7 +61,7 @@
         }
         h4 {
             font-weight: 600;
-            color: rgba(106, 109, 114, 1);
+            color: #021E45;
             margin: 0;
         }
         .employee-count {

@@ -1,10 +1,8 @@
 import PropTypes from "prop-types";
 import iconPath from "../../../assets/icons/iconsLib";
 
-// const defaultStyles = { display: "inline-block", verticalAlign: "middle" };
 
 const Icon = ({ size, color, icon, className, viewBox }) => {
-  // const styles = { ...defaultStyles, ...style };
   return (
     <svg
       className={className}
@@ -33,7 +31,6 @@ Icon.propTypes = {
   color: PropTypes.string,
   icon: PropTypes.string.isRequired,
   viewBox: PropTypes.string.isRequired,
-  // style: PropTypes.shape(PropTypes.object),
   className: PropTypes.string,
 };
 

@@ -14,10 +14,21 @@
         position: absolute;
         top: 7px;
         left: 0;
-        width: 2.5px;
+        width: 2px;
         height: 45px;
-        background: rgba(65, 245, 212, 0.6);
-        border-radius: 8px;
+        background: #4186ffba;
+        border-radius: 12px;
+    }
+    .pipe {
+        &--development {
+            background: rgba(65, 245, 212, 0.6);
+        }
+        &--devops {
+            background: rgba(176, 245, 65, 0.68);
+        }
+        &--design {
+            background: rgba(245, 141, 65, 0.6);
+        }
     }
     &__col {
         display: flex;
