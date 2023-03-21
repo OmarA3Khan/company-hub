@@ -173,7 +173,7 @@ const Dashboard = () => {
         <div className='dashboard__container dashboard__container--projects'>
           <div className='dashboard__row'>
             <Icon color={'#6A6D72'} className='employees-icon' icon={'project'} size={24} />
-            <h4>Projects <span className='employee-count'>{employeeData.length}</span></h4>
+            <h4>Projects <span className='employee-count'>{projectData.length}</span></h4>
             <button><span>view all</span><RightArrow /></button>
           </div>
           <div className='information-row__header'>

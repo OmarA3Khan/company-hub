@@ -12,6 +12,7 @@ const Services = () => {
 
     const services = [
         {
+            id: '0',
             title: 'Lift and Shift',
             description: `Depending on your business’ infrastructure, cloud migration may not be as simple as shifting all
             your data at once. Don’t sweat it. GAC is well-versed in many different migration methods, including
@@ -20,11 +21,13 @@ const Services = () => {
             onto the cloud. It’s a cost-effective way to open the path for IT modernization.`
         },
         {
+            id: '1',
             title: 'Cloud Migration',
             description: `GAC gives you a competitive edge in your industry that allows you to avoid the roadblocks and hurdles of
             cloud migration. Get in touch with GAC today to get the right strategic solution designed for your company.`
         },
         {
+            id: '2',
             title: 'Proof of Concept',
             description: `GAC is proud to offer a wide range of services to plan rapidly, design, implement, deliver and host Cloud
             Proof of Concepts and pilots, delivered by experienced architects, analysts, and developers. We’re confident that the way
@@ -32,19 +35,15 @@ const Services = () => {
         },
     ];
 
-    const toggleService = () => {
+    const handleClick = (e) => {
         setToggleClicked(true);
         setTimeout(() => {
-            if(selectedServiceIndex < (services.length - 1)) {
-                setselectedServiceIndex(selectedServiceIndex + 1);
-            } else {
-                setselectedServiceIndex(0);
-            }
-        }, 1500)
+            setselectedServiceIndex(e.target.dataset.id);
+        }, 1500);
         setTimeout(() => {
             setToggleClicked(false);
         }, 2100);
-    }
+    };
 
     return (
         <div id="services-section" className="services-section">
@@ -74,10 +73,14 @@ const Services = () => {
                             <p>{services[selectedServiceIndex].description}</p>
                         </div>
                     </div>
-                    <div className='toggle-card' onClick={toggleService}>
-                        <div className='toggle-button' ></div>
-                        <div className='toggle-button'></div>
-                        <div className='toggle-button'></div>
+                    <div className='toggle-card'>
+                    {
+                        services.map((service) => {
+                            return (           
+                                <div data-id={service.id} key={service.id} onClick={handleClick} className='toggle-button'></div>
+                            );
+                        })
+                    }
                     </div>
                 </div>
                 <div className='circle circle__primary' />
