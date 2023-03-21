@@ -62,38 +62,7 @@
             left: -2%;
         }
     }
-    .card-container {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        .circle {
-            position: relative;
-            &__secondary {
-                border: 8px solid rgba(52, 96, 173, 1);
-                bottom: 15vh;
-                left: 2%;
-                height: 130px;
-                width: 130px;
-            }
-            &__primary {
-                height: 35px;
-                width: 35px;
-                left: 10%;
-            }
-            &__tertiary {
-                height: 35px;
-                width: 35px;
-                align-self: end;
-                right: 35vw;
-                top: 15vh;
-            }&__secondary {
-                &.right {
-                    top: 48vh;
-                    left: -10vw;
-                }
-            }
-        }
-        .card {
+        .slide-container {
             margin-top: 12vh;
             max-width: 55vw;
             border-radius: 30px;
@@ -127,7 +96,6 @@
             }
         }
     }
-}
 
 .animation {
     -webkit-animation: fadeinout 2s;
