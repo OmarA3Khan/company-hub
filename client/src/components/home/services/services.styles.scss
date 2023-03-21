@@ -121,9 +121,14 @@
             top: 20px;
             .toggle-button {
                 margin: 0 10px;
-                height: 5px;
-                width: 50px;
+                height: 8px;
+                width: 8px;
+                border-radius: 50px;
                 background: rgba(47, 46, 65, 0.6);
+            }
+            .toggle-button:hover {
+                background: #ffff;
+                cursor: pointer;
             }
         }
     }

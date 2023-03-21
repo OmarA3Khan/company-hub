@@ -1,7 +1,7 @@
 .footer {
     margin-top: 20%;
     color: white;
-    background: linear-gradient(180deg, #040C56 0%, #346BAD 100%);
+    background: linear-gradient(180deg, #3460AD 0%, #34ADAD 100%);
     h2 {
         margin: 10px 0 0px 0;
     }
@@ -19,10 +19,12 @@
     }
     &__cta {
         .column {
-            .icon {
-                filter: invert(98%) sepia(1%) saturate(0%) hue-rotate(281deg) brightness(102%) contrast(103%);
+            .icon{
+                height: 90px;
+                width: 90px;                
             }
             .icon-container {
+                filter: invert(98%) sepia(1%) saturate(0%) hue-rotate(281deg) brightness(102%) contrast(103%);
                 color: white;
                 max-width: 3vw;
             }
