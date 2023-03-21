@@ -1,6 +1,8 @@
+import AllCourses from "../allCourses/allCourses.component";
+
 const Academy = () => {
     return (
-        <h1>This is the Academy</h1>
+        <AllCourses />
     )
 };
 
