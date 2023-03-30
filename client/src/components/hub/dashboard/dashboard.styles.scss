@@ -38,6 +38,7 @@
         }
         button {
             background-color: #fff;
+            text-decoration: none;
             border: 1.5px solid #3460AD;
             border-radius: 12px;
             padding: 5px ;
@@ -51,6 +52,15 @@
             justify-content: space-around;
             font-size: 14px;
             cursor: pointer;
+        }
+        Link{
+            align-self: center;
+            margin-left:auto;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+
         }
     }
     &__row {
