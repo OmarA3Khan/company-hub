@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+
 import {ReactComponent as RightArrow} from '../../../assets/icons/rightArrow.svg';
 import InformationRow from "../informationRow/informationRow.component";
 import Icon from '../../base/icon/icon.component';
 import StatusOverview from '../statusOverview/statusOverview.component';
+import Button from '../../base/button/button.component';
 
 import './dashboard.styles.scss';
 
@@ -136,13 +137,9 @@ const Dashboard = () => {
                         </h4>
                     </div>
                     <div className='dashboard__row'>
-                        <StatusOverview overViewData={overviewData}/> {/* <Link to='/hub/user-directory'> */}
-                        <Link to='/hub/user-directory'>
-                            <button>
-                                <span>view all</span><RightArrow/>
-                            </button>
-                        </Link>
-                        {/* </Link> */} </div>
+                      <StatusOverview overViewData={overviewData}/>
+                      <Button url={'/hub/user-directory'} icon={'rightArrow'} text={'view all'}/>
+                    </div>
                     <div className='information-row__header'>
                         <span className='header__element'></span>
                         <span className='header__element'></span>
@@ -195,8 +192,7 @@ const Dashboard = () => {
                                 projectData.length
                             }</span>
                         </h4>
-                        <button>
-                            <span>view all</span><RightArrow/></button>
+                        <Button url={'/hub/project-directory'} icon={'rightArrow'} text={'view all'}/>
                     </div>
                     <div className='information-row__header'>
                         <span className='header__element'></span>

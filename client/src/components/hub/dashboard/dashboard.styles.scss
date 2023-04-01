@@ -28,6 +28,12 @@
             .information-row__header {
                 grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
             }
+            .dashboard__row {
+                &:nth-of-type(2) {
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
         }
 
         &--projects{
@@ -35,32 +41,9 @@
             .information-row__header {
                 grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
             }
-        }
-        button {
-            background-color: #fff;
-            text-decoration: none;
-            border: 1.5px solid #3460AD;
-            border-radius: 12px;
-            padding: 5px ;
-            width:130px;
-            height: 30px;
-            color:rgba(65, 134, 255, 0.7);
-            align-self: center;
-            margin-left:auto;
-            align-items: center;
-            display: flex;
-            justify-content: space-around;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        Link{
-            align-self: center;
-            margin-left:auto;
-            align-items: center;
-            display: flex;
-            justify-content: space-around;
-            text-decoration: none;
-
+            .button {
+                margin-left: auto;
+            }
         }
     }
     &__row {
